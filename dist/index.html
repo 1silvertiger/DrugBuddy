@@ -3,6 +3,10 @@
 
 <head>
    <link rel="stylesheet" href="/css/materialize.min.css">
+   <link rel="manifest" href="manifest.webmanifest">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="theme-color" content="#ffffff">
+
    <script defer src="/js/materialize.min.js"></script>
    <script src="/js/vue.min.js"></script>
    <script src="index.js"></script>
@@ -23,6 +27,13 @@
          </tbody>
       </table>
    </div>
+
+   <script>
+      if ('serviceWorker' in navigator) {
+         navigator.serviceWorker.register('/sw.js')
+            .then(function () { console.log("Service worker registered"); });
+      }
+   </script>
 </body>
 
 </html>
