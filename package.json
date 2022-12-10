@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/1silvertiger/DrugBuddy#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "materialize-css": "^1.0.0-rc.2",
     "vue": "^2.6.10"
   }
